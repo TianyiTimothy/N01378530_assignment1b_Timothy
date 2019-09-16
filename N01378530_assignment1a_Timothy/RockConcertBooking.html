@@ -2,29 +2,66 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Booking a Rock Concert</title>
+    <title>Book a Rock Concert</title>
     <link rel="stylesheet" type="text/css" href="Content/Site.css" />
 </head>
 <body>
-    <section>
-        <h1>Please input your name</h1>
-        <label>your first name: </label>
-        <input type="text" id="client_firstname" name="client_firstname" />
-    </section>
+    <form method="get" action="http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php">
+        <section>
+            <h1>Please input your name</h1>
+            <label>your first name: </label>
+            <input type="text" id="client_firstname" name="client_firstname" />
+        </section>
 
-    <section>
-        <h2>Please choose your favorite rock band</h2>
-        <label>your favorite rock band: </label>
+        <section>
+            <h2>Please choose your favorite rock band first (just for statistics) </h2>
+            <label>What is your favorite rock band?</label>
+            <div>
+                <select id="client_favorite_rockband" name="client_favorite_rockband">
+                    <option value="greenday">Green Day</option>
+                    <option value="acdc">AC/DC</option>
+                    <option value="queen">Queen</option>
+                    <option value="bonjovi">Bon Jovi</option>
+                </select>
+            </div>
+        </section>
 
-        <input type="radio" id="favoriteRockband_option_1" name="client_favoriteRockband" />
-        <label for="favoriteRockband_option_1">Green Day</label>
+        <section>
+            <h2>Which rock concert would you like to book?</h2>
+            <div>
+                <input type="checkbox" value="5secondsofsummer" id="client_rockconcert_1" name="client_rockconcert_1" />
+                <label for="client_rockconcert_1">5 Seconds of Summer - Sept. 24th, 2019</label>
+            </div>
+            <div>
+                <input type="checkbox" value="rocknroll2019" id="client_rockconcert_2" name="client_rockconcert_2" />
+                <label for="client_rockconcert_2">Rock n Roll 2019 - Sept. 25th, 2019</label>
+            </div>
+            <div>
+                <input type="checkbox" value="theevilpowers" id="client_rockconcert_3" name="client_rockconcert_3" />
+                <label for="client_rockconcert_3">The Evil Powers - Sept. 25th, 2019</label>
+            </div>
+        </section>
 
-        <input type="radio" id="favoriteRockband_option_2" name="client_favoriteRockband" />
-        <label for="favoriteRockband_option_2">Queen</label>
+        <section>
+            <h2>Where do you want to sit?</h2>
+            <label>Choose your seat:</label>
+            <div>
+                <input type="radio" value="front" id="seat_option_1" name="client_seat" />
+                <label for="seat_option_1">Front</label>
+            </div>
+            <div>
+                <input type="radio" value="middle" id="seat_option_2" name="client_seat" />
+                <label for="seat_option_2">Middle</label>
+            </div>
+            <div>
+                <input type="radio" value="back" id="seat_option_3" name="client_seat" />
+                <label for="seat_option_3">Back</label>
+            </div>
+        </section>
 
-        <input type="radio" id="favoriteRockband_option_3" name="client_favoriteRockband" />
-        <label for="favoriteRockband_option_3">AC/DC</label>
-    </section>
-
+        <section>
+            <input type="submit" value="submit" />
+        </section>
+    </form>
 </body>
 </html>
