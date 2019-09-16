@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="Content/Site.css" />
 </head>
 <body>
-    <form method="get" action="http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php" id="form1" runat="server">
+    <form method="GET" action="http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php" id="form1" runat="server">
         <section>
             <h1>Please input your name</h1>
             <label>your first name:</label>
