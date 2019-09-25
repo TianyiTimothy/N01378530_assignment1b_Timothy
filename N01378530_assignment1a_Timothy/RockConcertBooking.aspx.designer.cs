@@ -31,6 +31,15 @@ namespace N01378530_assignment1a_Timothy {
         protected global::System.Web.UI.WebControls.TextBox client_firstname;
         
         /// <summary>
+        /// client_age control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox client_age;
+        
+        /// <summary>
         /// client_favorite_rockband control.
         /// </summary>
         /// <remarks>
@@ -40,21 +49,39 @@ namespace N01378530_assignment1a_Timothy {
         protected global::System.Web.UI.WebControls.DropDownList client_favorite_rockband;
         
         /// <summary>
-        /// client_rockconcert control.
+        /// client_rockconcert_interest control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList client_rockconcert;
+        protected global::System.Web.UI.WebControls.CheckBoxList client_rockconcert_interest;
         
         /// <summary>
-        /// seat_option control.
+        /// seat_type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList seat_option;
+        protected global::System.Web.UI.WebControls.RadioButtonList seat_type;
+        
+        /// <summary>
+        /// client_email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox client_email;
+        
+        /// <summary>
+        /// information_summary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl information_summary;
     }
 }
