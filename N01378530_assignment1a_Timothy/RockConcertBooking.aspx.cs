@@ -32,8 +32,7 @@ namespace N01378530_assignment1a_Timothy
                     information_summary.InnerHtml = "";
 
                     // determined rock concert cost
-                    float RockConcertCost = 0;
-
+                    double RockConcertCost = 0;
 
                     switch (SeatType)
                     {
@@ -47,6 +46,9 @@ namespace N01378530_assignment1a_Timothy
                             RockConcertCost += 100;
                             break;
                     }
+
+                    // HST (didn't use a new variable)
+                    RockConcertCost *= 1.3;
 
                     information_summary.InnerHtml += "Your first name is: " + ClientFirstname + "<br>"; 
                     information_summary.InnerHtml += "Your age is: " + ClientAge.ToString();
@@ -63,7 +65,8 @@ namespace N01378530_assignment1a_Timothy
                     information_summary.InnerHtml += "Your seat type is: " + SeatType + "<br>"; 
                     information_summary.InnerHtml += "Your email address is: " + ClientEmail + "<br>";
 
-                    information_summary.InnerHtml += "Your total price is: " + RockConcertCost.ToString() + " CAD";
+                    // use ToString("c") to display the value as a valid currency
+                    information_summary.InnerHtml += "Your total price is: " + RockConcertCost.ToString("c");
 
                 }
             }

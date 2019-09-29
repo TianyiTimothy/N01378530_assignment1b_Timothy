@@ -23,7 +23,7 @@
             <h2>Please tell us your age</h2>
             <label>your age:</label>
             <asp:TextBox runat="server" ID="client_age"></asp:TextBox>
-            <asp:CompareValidator runat="server" ControlToValidate="client_age" ValueToCompare="0" Operator="GreaterThan" Type="Integer" EnableClientScript="true" ErrorMessage="Please input a valid age."></asp:CompareValidator>
+            <asp:CompareValidator runat="server" ControlToValidate="client_age" ValueToCompare="18" Operator="GreaterThan" Type="Integer" EnableClientScript="true" ErrorMessage="Please input a valid age. (You should be at least 18)"></asp:CompareValidator>
         </section>
         
         <section>
